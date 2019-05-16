@@ -12,6 +12,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CalBasica" customModuleProvider="target">
             <connections>
+                <outlet property="botonmulti" destination="ELS-Ck-nhh" id="dj3-Ue-xjG"/>
+                <outlet property="botonresta" destination="Z3f-IU-bgA" id="wpe-bP-V3E"/>
+                <outlet property="botonsuma" destination="xWo-MV-oNX" id="La3-dj-2AT"/>
+                <outlet property="butonraiz" destination="Auw-gm-deI" id="2BZ-fE-5at"/>
+                <outlet property="cajanumero1" destination="f6k-8K-H3k" id="TXO-uj-buU"/>
+                <outlet property="cajanumero2" destination="gSC-4c-g5E" id="n4R-C2-Mxe"/>
+                <outlet property="cajaresultado" destination="MOF-Sy-cOR" id="1cJ-GA-6FI"/>
+                <outlet property="etiqnumero1" destination="lEV-Iy-1fe" id="Zgg-0c-0eP"/>
+                <outlet property="etiqnumero2" destination="M7v-Ur-CBw" id="nTp-oM-VZd"/>
+                <outlet property="etiqresultado" destination="1pn-Ps-CMh" id="jPc-Ek-3sh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -70,6 +80,9 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="actbotonsuma:" destination="-1" eventType="touchUpInside" id="bIU-pv-zN7"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3f-IU-bgA">
                     <rect key="frame" x="184" y="541" width="119" height="30"/>
@@ -79,6 +92,9 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="actbotonresta:" destination="-1" eventType="touchUpInside" id="Ddx-9n-Kwz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELS-Ck-nhh">
                     <rect key="frame" x="57" y="589" width="119" height="30"/>
@@ -88,6 +104,9 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="actbotonmulti:" destination="-1" eventType="touchUpInside" id="86P-uw-cgO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auw-gm-deI">
                     <rect key="frame" x="184" y="589" width="119" height="30"/>
@@ -97,6 +116,9 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="actbotonraiz:" destination="-1" eventType="touchUpInside" id="hjM-Jb-fbb"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculadora Basica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCS-RL-U9W">
                     <rect key="frame" x="49" y="112" width="277" height="37"/>
