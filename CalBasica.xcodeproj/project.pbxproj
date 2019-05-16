@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		85AD5B94228E06D300D5CF0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD5B93228E06D300D5CF0A /* AppDelegate.swift */; };
-		85AD5B96228E06D300D5CF0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD5B95228E06D300D5CF0A /* ViewController.swift */; };
-		85AD5B99228E06D300D5CF0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AD5B97228E06D300D5CF0A /* Main.storyboard */; };
 		85AD5B9B228E06D400D5CF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AD5B9A228E06D400D5CF0A /* Assets.xcassets */; };
 		85AD5B9E228E06D400D5CF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AD5B9C228E06D400D5CF0A /* LaunchScreen.storyboard */; };
 		85AD5BA9228E06D400D5CF0A /* CalBasicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD5BA8228E06D400D5CF0A /* CalBasicaTests.swift */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		85AD5B90228E06D300D5CF0A /* CalBasica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalBasica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AD5B93228E06D300D5CF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85AD5B95228E06D300D5CF0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85AD5B98228E06D300D5CF0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85AD5B9A228E06D400D5CF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AD5B9D228E06D400D5CF0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85AD5B9F228E06D400D5CF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,11 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				85AD5B93228E06D300D5CF0A /* AppDelegate.swift */,
-				85AD5B95228E06D300D5CF0A /* ViewController.swift */,
-				85AD5B97228E06D300D5CF0A /* Main.storyboard */,
+				85AD5BB3228E078100D5CF0A /* view */,
+				85AD5BB4228E079400D5CF0A /* Controller */,
+				85AD5BB5228E07C200D5CF0A /* Model */,
+				85AD5BB6228E07C900D5CF0A /* Util */,
+				85AD5BB7228E07D900D5CF0A /* Supporting Files */,
 				85AD5B9A228E06D400D5CF0A /* Assets.xcassets */,
-				85AD5B9C228E06D400D5CF0A /* LaunchScreen.storyboard */,
-				85AD5B9F228E06D400D5CF0A /* Info.plist */,
 			);
 			path = CalBasica;
 			sourceTree = "<group>";
@@ -94,6 +91,67 @@
 				85AD5BAA228E06D400D5CF0A /* Info.plist */,
 			);
 			path = CalBasicaTests;
+			sourceTree = "<group>";
+		};
+		85AD5BB3228E078100D5CF0A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				85AD5BB8228E080B00D5CF0A /* Launch */,
+				85AD5BB9228E081D00D5CF0A /* Home */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		85AD5BB4228E079400D5CF0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85AD5BBA228E083500D5CF0A /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85AD5BB5228E07C200D5CF0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85AD5BB6228E07C900D5CF0A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		85AD5BB7228E07D900D5CF0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85AD5B9F228E06D400D5CF0A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85AD5BB8228E080B00D5CF0A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				85AD5B9C228E06D400D5CF0A /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		85AD5BB9228E081D00D5CF0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		85AD5BBA228E083500D5CF0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +237,6 @@
 			files = (
 				85AD5B9E228E06D400D5CF0A /* LaunchScreen.storyboard in Resources */,
 				85AD5B9B228E06D400D5CF0A /* Assets.xcassets in Resources */,
-				85AD5B99228E06D300D5CF0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AD5B96228E06D300D5CF0A /* ViewController.swift in Sources */,
 				85AD5B94228E06D300D5CF0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +277,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85AD5B97228E06D300D5CF0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85AD5B98228E06D300D5CF0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85AD5B9C228E06D400D5CF0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Casa.Jes.CalBasica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -388,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Casa.Jes.CalBasica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
