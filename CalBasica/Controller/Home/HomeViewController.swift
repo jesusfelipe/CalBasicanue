@@ -68,4 +68,26 @@ class HomeViewController: UIViewController {
         return a*b
     }
     
+    func raiz(a:Int)->Float{
+        var i:Float=0
+        var var1:Float=0
+        var var2:Float=0
+        
+        while((i*i)<=Float(a)){
+            i+=0.1
+        }
+        var j:Int=0
+        var1=i
+        while (j<3){
+            var2=Float(a)
+            var2/=var1
+            var2+=var1
+            var2/=2
+            var1=var2
+            j+=1
+        }
+        
+        return var2
+    }
+    
 }
