@@ -63,4 +63,9 @@ class HomeViewController: UIViewController {
     func resta(a:Int,b:Int)->Int{
         return a-b
     }
+
+    func multiplicar(a:Int,b:Int)->Int{
+        return a*b
+    }
+    
 }
