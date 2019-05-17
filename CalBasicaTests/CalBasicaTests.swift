@@ -100,7 +100,7 @@ class CalBasicaTests: XCTestCase {
         var esperado:Int=0
         num1=2
         num2=(-3)
-        esperado=1
+        esperado=5
         
         //Act
         var resultado:Int=0
@@ -120,7 +120,7 @@ class CalBasicaTests: XCTestCase {
         var esperado:Int=0
         num1=(-3)
         num2=2
-        esperado=(-1)
+        esperado=(-5)
         
         //Act
         var resultado:Int=0
