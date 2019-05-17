@@ -71,4 +71,64 @@ class CalBasicaTests: XCTestCase {
         XCTAssertEqual(resultado, esperado)
         
     }
+    
+    func testpruebaresta_1(){
+        
+        //Arrange
+        var num1:Int=0
+        var num2:Int=0
+        var esperado:Int=0
+        num1=2
+        num2=3
+        esperado=(-1)
+        
+        //Act
+        var resultado:Int=0
+        resultado=pruebaval.resta(a:num1,b:num2)
+        
+        
+        //Assert
+        XCTAssertEqual(resultado, esperado)
+        
+    }
+    
+    func testpruebaresta_2(){
+        
+        //Arrange
+        var num1:Int=0
+        var num2:Int=0
+        var esperado:Int=0
+        num1=2
+        num2=(-3)
+        esperado=1
+        
+        //Act
+        var resultado:Int=0
+        resultado=pruebaval.resta(a:num1,b:num2)
+        
+        
+        //Assert
+        XCTAssertEqual(resultado, esperado)
+        
+    }
+    
+    func testpruebaresta_3(){
+        
+        //Arrange
+        var num1:Int=0
+        var num2:Int=0
+        var esperado:Int=0
+        num1=(-3)
+        num2=2
+        esperado=(-1)
+        
+        //Act
+        var resultado:Int=0
+        resultado=pruebaval.resta(a:num1,b:num2)
+        
+        
+        //Assert
+        XCTAssertEqual(resultado, esperado)
+        
+    }
 }
