@@ -56,5 +56,8 @@ class HomeViewController: UIViewController {
     @IBAction func actbotonraiz(_ sender: UIButton) {
     }
     
+    func suma(a:Int,b:Int)->Int{
+        return a+b
+    }
 
 }

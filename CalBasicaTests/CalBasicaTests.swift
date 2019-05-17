@@ -35,10 +35,13 @@ class CalBasicaTests: XCTestCase {
     func testpruebasuma_1(){
         
         //Arrange
-        var num1:Int=2
-        var num2:Int=3
-        var esperado:Int=5
-        
+        var num1:Int=0
+        var num2:Int=0
+        var esperado:Int=0
+        num1=2
+        num2=3
+        esperado=5
+      
         //Act
         var resultado:Int=0
         resultado=pruebaval.suma(a:num1,b:num2)
