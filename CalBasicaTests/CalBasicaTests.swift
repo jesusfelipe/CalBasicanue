@@ -10,6 +10,8 @@ import XCTest
 @testable import CalBasica
 
 class CalBasicaTests: XCTestCase {
+    
+    let pruebaval:HomeViewController=HomeViewController()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -29,6 +31,17 @@ class CalBasicaTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    func testpruebasuma_1(){
+        var num1:Int=2
+        var num2:Int=3
+        var esperado:Int=5
+        var resultado:Int=0
+        
+        
+        resultado=pruebaval.suma(a:num1,b:num2)
+        XCTAssertEqual(resultado, esperado)
+        
     }
 
 }
