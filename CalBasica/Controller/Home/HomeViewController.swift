@@ -60,4 +60,7 @@ class HomeViewController: UIViewController {
         return a+b
     }
 
+    func resta(a:Int,b:Int)->Int{
+        return a-b
+    }
 }
