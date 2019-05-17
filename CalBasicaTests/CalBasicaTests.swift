@@ -198,7 +198,7 @@ class CalBasicaTests: XCTestCase {
         var num1:Int=0
         var esperado:Float
         num1=10
-        esperado=3.162776601168379
+        esperado=3.1622776601168379
         
         //Act
         var resultado:Float

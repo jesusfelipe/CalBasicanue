@@ -48,6 +48,16 @@ class HomeViewController: UIViewController {
     // MARK: - Acción Botones
     
     @IBAction func actbotonsuma(_ sender: UIButton) {
+        
+        var num1:Int?=Int(cajanumero1.text!)
+        var num2:Int?=Int(cajanumero2.text!)
+        
+        var resultado:Int=0
+        
+        resultado=suma(a:num1!,b:num2!)
+        
+        cajaresultado.text = String(resultado)
+        
     }
     @IBAction func actbotonresta(_ sender: UIButton) {
     }
