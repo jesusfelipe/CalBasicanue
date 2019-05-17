@@ -192,4 +192,37 @@ class CalBasicaTests: XCTestCase {
         
     }
     
+    func testpruebaraiz_1(){
+        
+        //Arrange
+        var num1:Int=0
+        var esperado:Float
+        num1=10
+        esperado=3.162776601168379
+        
+        //Act
+        var resultado:Float
+        resultado=pruebaval.raiz(a:num1)
+        
+        
+        //Assert
+        XCTAssertEqual(resultado, esperado)
+    }
+    
+    func testpruebaraiz_2(){
+        
+        //Arrange
+        var num1:Int=0
+        var esperado:Float
+        num1=4
+        esperado=2
+        
+        //Act
+        var resultado:Float
+        resultado=pruebaval.raiz(a:num1)
+        
+        
+        //Assert
+        XCTAssertEqual(resultado, esperado)
+    }
 }
