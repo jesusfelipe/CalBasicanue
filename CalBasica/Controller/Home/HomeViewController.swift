@@ -60,10 +60,40 @@ class HomeViewController: UIViewController {
         
     }
     @IBAction func actbotonresta(_ sender: UIButton) {
+        
+        var num1:Int?=Int(cajanumero1.text!)
+        var num2:Int?=Int(cajanumero2.text!)
+        
+        var resultado:Int=0
+        
+        resultado=resta(a:num1!,b:num2!)
+        
+        cajaresultado.text = String(resultado)
+        
     }
     @IBAction func actbotonmulti(_ sender: UIButton) {
+        
+        var num1:Int?=Int(cajanumero1.text!)
+        var num2:Int?=Int(cajanumero2.text!)
+        
+        var resultado:Int=0
+        
+        resultado=multiplicar(a:num1!,b:num2!)
+        
+        cajaresultado.text = String(resultado)
+        
+        
     }
     @IBAction func actbotonraiz(_ sender: UIButton) {
+        
+        var num1:Int?=Int(cajanumero1.text!)
+        
+        var resultado:Float=0
+        
+        resultado=raiz(a:num1!)
+        
+        cajaresultado.text = String(resultado)
+        
     }
     
     func suma(a:Int,b:Int)->Int{
