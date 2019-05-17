@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var botonresta: UIButton!
     @IBOutlet weak var botonmulti: UIButton!
     @IBOutlet weak var butonraiz: UIButton!
+    @IBOutlet weak var botonlimpiar: UIButton!
     
     // MARK: - Inicializacion
     
@@ -95,6 +96,9 @@ class HomeViewController: UIViewController {
         cajaresultado.text = String(resultado)
         
     }
+    @IBAction func actbotonlimpiar(_ sender: Any) {
+        clear()
+    }
     
     func suma(a:Int,b:Int)->Int{
         return a+b
@@ -128,6 +132,12 @@ class HomeViewController: UIViewController {
         }
         
         return var2
+    }
+    
+    func clear(){
+        cajanumero1.text=nil
+        cajanumero2.text=nil
+        cajaresultado.text=nil
     }
     
 }

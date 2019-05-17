@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CalBasica" customModuleProvider="target">
             <connections>
+                <outlet property="botonlimpiar" destination="ZIq-dm-jZA" id="zV0-aE-ts8"/>
                 <outlet property="botonmulti" destination="ELS-Ck-nhh" id="dj3-Ue-xjG"/>
                 <outlet property="botonresta" destination="Z3f-IU-bgA" id="wpe-bP-V3E"/>
                 <outlet property="botonsuma" destination="xWo-MV-oNX" id="La3-dj-2AT"/>
@@ -127,6 +128,18 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIq-dm-jZA">
+                    <rect key="frame" x="117" y="633" width="119" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78048303929999996" green="0.56558577899999996" blue="0.022617029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Limpiar">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actbotonlimpiar:" destination="-1" eventType="touchUpInside" id="bJB-8n-iRi"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.61675941780821919" green="0.70443600171232879" blue="0.61972923801369861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
